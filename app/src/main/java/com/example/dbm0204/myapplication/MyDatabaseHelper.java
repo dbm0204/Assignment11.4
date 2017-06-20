@@ -26,9 +26,14 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public static final String PERSON_COLUMN_AGE="age";
 
     public MyDatabaseHelper(Context context) {
+        //constructor
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
 
     }
+
+    /**
+     *Database helper functions
+     */
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(
